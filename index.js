@@ -24,7 +24,7 @@ const global = {
 	defaultCCPath: GDShare.getCCPath().substring(0, GDShare.getCCPath().lastIndexOf("/")),
 	autoBackupLocation: `${GDShare.getDir()}/resources/autobackup/auto-backup.json`,
 	autoBackups: false,
-	userdataLoc: "data/userdata.json",
+	userdataLoc: `${mac ? GDShare.getDir() + "/" : ""}data/userdata.json`,
 	autobackupSuccesful: false
 }
 
